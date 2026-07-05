@@ -32,3 +32,23 @@
   - `ResourceNotFoundException` -> `404 Not Found`
   - runtime -> `500 Internal Server Error`
 - Log stack traces at the framework boundary, but return safe error messages to clients.
+
+```mermaid
+classDiagram
+  class NetworkBoundaryServer {
+    -SSLContext secureContext
+    -CipherSuiteFilter filter
+    +bind(int port) Void
+  }
+  class SSLContextConfiguration {
+    -byte[] trustStoreBytes
+    -char[] credentialPin
+    +buildContext() SSLContext
+  }
+  class CipherSuiteFilter {
+    -String[] allowedCiphers
+    +apply(SSLParameters parameters) Void
+  }
+  NetworkBoundaryServer --> SSLContextConfiguration
+  NetworkBoundaryServer --> CipherSuiteFilter
+```
