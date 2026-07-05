@@ -1,0 +1,11 @@
+# gitignore for IgniteBoot
+/.idea/
+*.iml
+*.class
+*.log
+target/
+build/
+*.jar
+*.war
+*.ear
+.DS_Store
