@@ -1,15 +1,10 @@
 # IgniteBoot
 
-A lightweight Java framework for regulated banking environments.
+A design-only repository for a contract-first, AOT-driven platform for building secure REST APIs in regulated environments.
 
-## Documentation
+## Core Design Documents
 
-- [Overview](docs/overview.md)
-- [Architecture](docs/architecture.md)
-- [Security](docs/security.md)
-- [Deployment](docs/deployment.md)
-
-## Project Layout
-
-- `src/main/java` - framework implementation
-- `docs/` - modular architecture and security docs
+- [Overview](docs/overview.md) — high-level vision and workflow
+- [Architecture](docs/architecture.md) — core boundaries and design principles
+- [Security](docs/security.md) — runtime hardening and validation model
+- [Ledger](docs/ledger.md) — audit and recovery design
