@@ -2,9 +2,14 @@
 
 A design-only repository for a contract-first, AOT-driven platform for building secure REST APIs in regulated environments.
 
-## Core Design Documents
+## Two-Part Design Structure
 
-- [Overview](docs/overview.md) — high-level vision and workflow
-- [Architecture](docs/architecture.md) — core boundaries and design principles
-- [Security](docs/security.md) — runtime hardening and validation model
-- [Ledger](docs/ledger.md) — audit and recovery design
+This repository is organized into exactly two design documents:
+
+- HLD: the platform vision, architecture boundaries, and system principles
+- LLD: the detailed design choices for security, execution flow, and audit behavior
+
+## Documents
+
+- [HLD](docs/overview.md) — the high-level design of the platform
+- [LLD](docs/architecture.md) — the low-level design of the runtime and compliance model

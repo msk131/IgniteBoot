@@ -1,4 +1,4 @@
-# Architecture (High Level)
+# LLD
 
 IgniteBoot is an AOT-first platform: a schema transformer generates explicit code, and a tiny runtime wires generated routing and a clear execution pipeline.
 
